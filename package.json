@@ -1,0 +1,27 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "js/app.js",
+ "scripts": {
+  "dev": "vite",
+  "build": "npm run build:ts && npm run build:sass",
+  "start": "vite preview",
+  "lint": "next lint",
+  "build:ts": "tsc",
+  "build:sass": "sass src/styles/styles.scss css/styles.css",
+  "watch:ts": "tsc -w",
+  "watch:sass": "sass src/styles/styles.scss css/styles.css --watch"
+}
+,
+  "devDependencies": {
+    "@types/jquery": "^3.5.32",
+    "sass": "^1.85.1",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
+}
